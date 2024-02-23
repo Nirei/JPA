@@ -16,6 +16,8 @@ public class Categoria {
     private String nombre;
     private String descripcion;
 
+    public Categoria() {}
+
     public Categoria(String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -43,5 +45,14 @@ public class Categoria {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    @Override
+    public String toString() {
+        return "Categoria{" +
+            "id=" + id +
+            ", nombre='" + nombre + '\'' +
+            ", descripcion='" + descripcion + '\'' +
+            '}';
     }
 }
